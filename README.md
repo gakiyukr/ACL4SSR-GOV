@@ -3,10 +3,13 @@
 * 项目基于CC-BY-SA-4.0协议发布  [![CC-BY-SA-4.0](https://licensebuttons.net/l/by-sa/4.0/88x31.png)](https://creativecommons.org/licenses/by-sa/4.0/deed.zh)
 * 本规则基于 ACL4SSR 完善
 * 添加了 Google One VPN 相关规则
+* 这里的 GOV 是 Google One VPN 的缩写，而不是 Government 的缩写。
 
 ## 如何使用
 
 直接在配置转换网站中，将 [本规则 ](https://raw.githubusercontent.com/gakiyukr/ACL4SSR-GOV/master/ACL4SSR-GOV.ini)作为远程配置使用。
+
+Google One VPN 相关内容：传送门
 
 
 ## Clash规则
@@ -44,4 +47,5 @@
 
 # License		
 [![](https://licensebuttons.net/l/by-sa/4.0/88x31.png)](https://creativecommons.org/licenses/by-sa/4.0/deed.zh)
+
 * CC-BY-SA-4.0
