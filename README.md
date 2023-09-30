@@ -38,8 +38,8 @@ Google One VPN 相关内容：传送门
 | Netflix.list           | 规则碎片-代理        | Netflix 的所有域名                                           |
 | ProxyGFWlist.list      | 规则碎片-代理        | GFW 的全量列表                                               |
 | ProxyLite.list         | 规则碎片-代理        | 比较精简的代理列表，包含常用的，以及被污染的域名             |
-| GeneralClashConfig.yml | clash配置文件        | 放行一堆国内的常用域名，配合系统代理更牛逼。 配置很全，自带中文注释。可以自行使用 |
-| pref.ini               | subconverter配置文件 | 更改了一些基础配置，将规则变成ACL4SSR                        |
+| GeneralClashConfig.yml | clash 配置文件        | 放行一堆国内的常用域名，配合系统代理更牛逼。 配置很全，自带中文注释。可以自行使用 |
+| pref.ini               | subconverter 配置文件 | 更改了一些基础配置，将规则变成 ACL4SSR                        |
 | GOV.list               | 规则碎片-代理        | Google One VPN 的相关域名                                    |
 | GOV-IP.list            | 规则碎片-代理        | Google One VPN 的相关 IP                                     |
 
