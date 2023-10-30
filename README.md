@@ -7,18 +7,25 @@
 
 ## 如何使用
 
-直接在配置转换网站中，将 [本规则 ](https://raw.githubusercontent.com/gakiyukr/ACL4SSR-GOV/master/ACL4SSR-GOV.ini)作为远程配置使用。
-
-Google One VPN 相关内容：传送门
+直接在配置转换网站中，将本规则的远程连接填入远程配置使用。
 
 
-## Clash规则
 
-主要文件在 Clash 文件夹下，只是一些规则碎片，可以配合一些订阅转换进行使用。
+包含广告过滤：
+https://raw.githubusercontent.com/gakiyukr/ACL4SSR-GOV/master/ACL4SSR-GOV.ini
+https://cdn.jsdelivr.net/gh/gakiyukr/ACL4SSR-GOV@master/ACL4SSR-GOV.ini
+不包含广告过滤：
+https://raw.githubusercontent.com/gakiyukr/ACL4SSR-GOV/master/ACL4SSR-GOV-unban-AD.ini
+https://cdn.jsdelivr.net/gh/gakiyukr/ACL4SSR-GOV@master/ACL4SSR-GOV-unban-AD.ini
+Parsers 预处理配置（有空了再更新如何使用）
+https://raw.githubusercontent.com/gakiyukr/ACL4SSR-GOV/master/Parsers.json
+https://cdn.jsdelivr.net/gh/gakiyukr/ACL4SSR-GOV@master/Parsers.json
 
-具体怎么使用需要看对应 Proxy 软件配置是怎么写的，还要请大家阅读你所使用的 Proxy 软件文档，看看否能使用。
+## 规则
 
-示例：项目里 `/Clash/config/` 目录下存放的是 [subconverter ](https://github.com/tindy2013/subconverter/blob/master/README-cn.md#外部配置)的 配置示例
+主要文件在 Clash 文件夹下，只是一些规则碎片。
+
+具体该配置能否使用，还是要看你的代理软件。
 
 | 文件                   | 类型                 | 解释                                                         |
 | ---------------------- | -------------------- | :----------------------------------------------------------- |
@@ -30,22 +37,27 @@ Google One VPN 相关内容：传送门
 | ChinaCompanyIp.list    | 规则碎片-直连        | 国内 BAT 公司及云服务厂商的 IP 段。所有在该云服务上的网站都可以直连。比如你网站在阿里云香港都可以直连。 |
 | ChinaIp.list           | 规则碎片-直连        | IPIP 的国内地址段。比 GeoIp 更好。电脑性能好，可以引入       |
 | Download.list          | 规则碎片-直连        | 一些下载用的域名                                             |
+| GoogleCN.list          | 规则碎片-直连        | Google 在中国能直连的网址列表                                |
 | Apple.list             | 规则碎片             | Apple 的所有域名                                             |
 | Microsoft.list         | 规则碎片             | Microsoft 的所有域名                                         |
 | OneDrive.list          | 规则碎片             | OneDrive                                                     |
-| GoogleCN.list          | 规则碎片-直连        | Google 在中国能直连的网址列表                                |
 | Telegram.list          | 规则碎片-代理        | Telegram 的所有域名                                          |
 | Netflix.list           | 规则碎片-代理        | Netflix 的所有域名                                           |
 | ProxyGFWlist.list      | 规则碎片-代理        | GFW 的全量列表                                               |
 | ProxyLite.list         | 规则碎片-代理        | 比较精简的代理列表，包含常用的，以及被污染的域名             |
-| GeneralClashConfig.yml | clash 配置文件        | 放行一堆国内的常用域名，配合系统代理更牛逼。 配置很全，自带中文注释。可以自行使用 |
-| pref.ini               | subconverter 配置文件 | 更改了一些基础配置，将规则变成 ACL4SSR                        |
+| xxxx.ini               | Subconverter 配置文件 | 更改了一些基础配置，将规则变成 ACL4SSR                        |
+| Parsers.json   | 预处理配置文件 | 用于 CFW，目前尚未完善     |
 | GOV.list               | 规则碎片-代理        | Google One VPN 连接时地区检测相关域名和 IP             |
-|                        |                       |                                                              |
 
 
+## 鸣谢
+
+[[ACL4SSR/ACL4SSR at master (github.com)](https://github.com/ACL4SSR/ACL4SSR/tree/master)](https://github.com/ACL4SSR/ACL4SSR)
+
+[Loyalsoldier/clash-rules: 🦄️ 🎃 👻 Clash Premium 规则集(RULE-SET)，兼容 ClashX Pro、Clash for Windows 客户端。 (github.com)](https://github.com/Loyalsoldier/clash-rules)
 
 # License		
+
 [![](https://licensebuttons.net/l/by-sa/4.0/88x31.png)](https://creativecommons.org/licenses/by-sa/4.0/deed.zh)
 
 * CC-BY-SA-4.0
